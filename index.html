@@ -177,268 +177,476 @@
             padding: 40px 16px;
         }
     }
+
+    .lang-switch { text-align: center; margin: 20px 0 0; }
+    .lang-switch button {
+        background: var(--color-bg);
+        color: var(--color-primary-dark);
+        border: 1px solid var(--color-border);
+        border-radius: 20px;
+        padding: 8px 18px;
+        margin: 0 4px;
+        font-size: 0.95rem;
+        cursor: pointer;
+    }
+    .lang-switch button.active {
+        background: var(--color-primary);
+        color: #FFFFFF;
+        border-color: var(--color-primary);
+    }
+    .lang { display: none; }
+    .lang.active { display: block; }
 </style>
+<noscript><style>.lang { display: block; }</style></noscript>
 </head>
 <body>
 
 <header class="hero">
-    <h1>Política de Privacidad</h1>
-    <p>CarolinaApp · Última actualización: Septiembre de 2026</p>
+    <h1 id="hero-title">Política de Privacidad</h1>
+    <p id="hero-sub">CarolinaApp · Última actualización: Octubre de 2026</p>
 </header>
 
 <div class="container">
 
-    <nav class="toc">
-        <h2>Contenido</h2>
-        <ol>
-            <li><a href="#seccion-1">Información que recopilamos</a></li>
-            <li><a href="#seccion-2">Cómo usamos la información</a></li>
-            <li><a href="#seccion-3">Servicios de terceros</a></li>
-            <li><a href="#seccion-4">Datos que NO recopilamos</a></li>
-            <li><a href="#seccion-5">Seguridad de los datos</a></li>
-            <li><a href="#seccion-6">Derechos del usuario</a></li>
-            <li><a href="#seccion-7">Cambios a esta política</a></li>
-            <li><a href="#seccion-8">Contacto</a></li>
-        </ol>
-    </nav>
+    <div class="lang-switch">
+        <button type="button" data-lang="es">Español</button>
+        <button type="button" data-lang="pt">Português</button>
+        <button type="button" data-lang="en">English</button>
+    </div>
+
+<!-- ═══════════════════════ ESPAÑOL ═══════════════════════ -->
+<div class="lang" id="lang-es" lang="es">
 
     <div class="card">
         <p>
-            En <strong>CarolinaApp</strong> respetamos tu privacidad y estamos comprometidos a
-            proteger tus datos personales. Esta Política de Privacidad explica qué información
-            recopilamos, cómo la usamos, con quién la compartimos y qué derechos tienes sobre
-            ella cuando utilizas nuestra aplicación móvil CarolinaApp (en adelante, "la App"),
-            desarrollada por <strong>Yareth Pinzón</strong> ("nosotros", "la Desarrolladora"),
-            con domicilio en Colombia.
-        </p>
-        <p>
-            Al descargar, instalar o usar CarolinaApp, aceptas las prácticas descritas en esta
-            Política de Privacidad. Si no estás de acuerdo con alguno de estos términos, por
-            favor no uses la aplicación.
+            En <strong>CarolinaApp</strong> respetamos tu privacidad. Esta política explica qué datos
+            recopilamos, cómo los usamos, con quién los compartimos y qué derechos tienes cuando usas
+            nuestra aplicación móvil (la "App"), desarrollada por <strong>Yareth Pinzón</strong>
+            ("nosotros"), con domicilio en Bogotá, Colombia. Al usar la App aceptas estas prácticas.
         </p>
     </div>
 
-    <div class="card" id="seccion-1">
-        <h2>1. Información que recopilamos</h2>
-        <p>Para poder ofrecerte las funciones de CarolinaApp, recopilamos las siguientes categorías de información:</p>
-
-        <h3>1.1 Datos de autenticación (Google Sign-In)</h3>
+    <div class="card">
+        <h2>1. Responsable del tratamiento</h2>
         <p>
-            Para crear tu cuenta y mantener tu sesión iniciada, utilizamos <strong>Google Sign-In</strong>.
-            A través de este servicio recibimos:
-        </p>
-        <ul>
-            <li>Tu nombre asociado a la cuenta de Google.</li>
-            <li>Tu dirección de correo electrónico.</li>
-            <li>Tu foto de perfil pública de Google (si está disponible).</li>
-            <li>Un identificador único de usuario (UID) generado por Firebase Authentication.</li>
-        </ul>
-
-        <h3>1.2 Progreso de estudio y actividad dentro de la App</h3>
-        <p>
-            Guardamos en <strong>Firebase Firestore</strong> la información necesaria para que tu
-            progreso se sincronice entre sesiones, incluyendo:
-        </p>
-        <ul>
-            <li>Resultados de simulacros y respuestas a preguntas.</li>
-            <li>Estadísticas de desempeño por área médica.</li>
-            <li>Racha de estudio, metas diarias y logros/insignias desbloqueadas.</li>
-            <li>Notas de estudio creadas por ti dentro de la App.</li>
-            <li>Estado de tu suscripción (Free o Premium).</li>
-        </ul>
-
-        <h3>1.3 Información de suscripción</h3>
-        <p>
-            Si adquieres la suscripción Premium, procesamos el identificador de la suscripción y
-            su fecha de expiración, entregados por <strong>Google Play Billing</strong>, para
-            habilitar tus beneficios dentro de la App.
-        </p>
-
-        <h3>1.4 Datos técnicos y de uso</h3>
-        <p>
-            Recopilamos información técnica básica generada automáticamente por los servicios de
-            Google que integramos (Firebase Analytics, Firebase Crashlytics y AdMob), como el
-            modelo de dispositivo, versión del sistema operativo, identificadores de publicidad y
-            registros de fallos, con el fin de mejorar la estabilidad de la App y medir el
-            rendimiento de los anuncios.
+            CarolinaApp (Bogotá, Colombia) es responsable del tratamiento de tus datos personales.
+            Contacto: <a href="mailto:contacto.carolinaapp@gmail.com">contacto.carolinaapp@gmail.com</a>.
+            Tratamos tus datos conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013 (Colombia) y, según tu país de
+            residencia, a normas equivalentes como el GDPR (Unión Europea), la LGPD (Brasil), la LFPDPPP (México),
+            la Ley 29733 (Perú) y otras leyes locales de protección de datos.
         </p>
     </div>
 
-    <div class="card" id="seccion-2">
-        <h2>2. Cómo usamos la información</h2>
-        <p>Usamos la información recopilada exclusivamente para los siguientes propósitos:</p>
+    <div class="card">
+        <h2>2. Datos que recopilamos</h2>
         <ul>
-            <li>Crear y mantener tu cuenta de usuario dentro de la App.</li>
-            <li>Sincronizar tu progreso de estudio entre dispositivos y sesiones.</li>
-            <li>Calcular tus estadísticas, racha de estudio, plan de estudio personalizado y recomendaciones.</li>
-            <li>Gestionar y validar tu suscripción Premium a través de Google Play Billing.</li>
-            <li>Mostrar anuncios relevantes a usuarios con cuenta gratuita (Free) mediante AdMob.</li>
-            <li>Detectar y corregir errores técnicos (fallos, cierres inesperados) mediante Firebase Crashlytics.</li>
-            <li>Entender el uso agregado y anónimo de la App para mejorar sus funciones (Firebase Analytics).</li>
-            <li>Comunicarnos contigo ante solicitudes de soporte relacionadas con tu cuenta o suscripción.</li>
+            <li><strong>Cuenta de Google</strong> (Google Sign-In / Firebase Authentication): correo electrónico, nombre, foto de perfil y un identificador único (UID).</li>
+            <li><strong>Nombre de usuario</strong>: el que elijas; es visible para otros usuarios en el ranking semanal.</li>
+            <li><strong>Progreso de estudio</strong> (Firebase Firestore): simulacros, respuestas, puntajes, estadísticas por área, rachas, logros, notas de estudio, preguntas guardadas y tarjetas de repaso.</li>
+            <li><strong>Suscripción</strong>: estado Free/Premium, identificador de la suscripción y su fecha de expiración (Google Play Billing). El pago lo procesa Google Play; no vemos tu tarjeta ni tus datos bancarios.</li>
+            <li><strong>Preferencias</strong>: idioma, exámenes objetivo y recordatorios.</li>
+            <li><strong>Datos técnicos y de uso</strong> (Firebase Analytics y Crashlytics): modelo de dispositivo, versión de Android, registros de errores y eventos de uso.</li>
+            <li><strong>Identificador de publicidad</strong> (usuarios gratuitos, mediante AdMob).</li>
         </ul>
-        <p>
-            <strong>No utilizamos tu información para fines distintos a los aquí descritos</strong>,
-            y no realizamos perfilamiento con fines ajenos al funcionamiento de la App.
-        </p>
     </div>
 
-    <div class="card" id="seccion-3">
-        <h2>3. Servicios de terceros</h2>
-        <p>
-            CarolinaApp utiliza los siguientes servicios de terceros para funcionar correctamente.
-            Cada uno de ellos procesa datos conforme a sus propias políticas de privacidad:
-        </p>
+    <div class="card">
+        <h2>3. Para qué usamos tus datos</h2>
+        <ul>
+            <li>Crear y mantener tu cuenta y sincronizar tu progreso (ejecución del servicio).</li>
+            <li>Calcular estadísticas, plan de estudio, ranking semanal y ligas.</li>
+            <li>Gestionar y validar tu suscripción Premium.</li>
+            <li>Mostrar anuncios a usuarios gratuitos (los Premium no ven anuncios).</li>
+            <li>Detectar y corregir errores y mejorar la App con estadísticas de uso (interés legítimo).</li>
+            <li>Enviarte recordatorios de estudio si los activas (consentimiento).</li>
+            <li>Atender tus solicitudes de soporte.</li>
+        </ul>
+        <p><strong>No vendemos tus datos personales</strong> ni los usamos para fines distintos a los descritos.</p>
+    </div>
 
+    <div class="card">
+        <h2>4. Servicios de terceros</h2>
         <table>
-            <thead>
-                <tr>
-                    <th>Servicio</th>
-                    <th>Propósito dentro de CarolinaApp</th>
-                    <th>Política del proveedor</th>
-                </tr>
-            </thead>
+            <thead><tr><th>Servicio</th><th>Propósito</th><th>Política del proveedor</th></tr></thead>
             <tbody>
                 <tr>
                     <td><strong>Google Firebase</strong><br>(Authentication, Firestore, Crashlytics, Analytics)</td>
-                    <td>Autenticación de usuarios, almacenamiento del progreso de estudio, reporte de errores y estadísticas de uso agregadas.</td>
+                    <td>Autenticación, almacenamiento del progreso, reporte de errores y estadísticas de uso.</td>
                     <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">firebase.google.com/support/privacy</a></td>
                 </tr>
                 <tr>
                     <td><strong>Google AdMob</strong></td>
-                    <td>Muestra anuncios intersticiales y con recompensa a usuarios con cuenta gratuita (Free). Los usuarios Premium no ven anuncios.</td>
+                    <td>Anuncios para usuarios gratuitos.</td>
                     <td><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">support.google.com/admob</a></td>
                 </tr>
                 <tr>
-                    <td><strong>Google Play Billing</strong></td>
-                    <td>Procesa los pagos y la gestión de la suscripción Premium mensual. CarolinaApp no almacena datos de tarjetas ni métodos de pago; estos son gestionados directamente por Google Play.</td>
-                    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></td>
-                </tr>
-                <tr>
-                    <td><strong>Google Sign-In</strong></td>
-                    <td>Autenticación segura mediante tu cuenta de Google, sin necesidad de crear ni recordar una contraseña adicional.</td>
+                    <td><strong>Google Play (Billing)</strong></td>
+                    <td>Pagos y gestión de la suscripción Premium.</td>
                     <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></td>
                 </tr>
             </tbody>
         </table>
-
-        <div class="note">
-            Estos proveedores actúan como encargados del tratamiento de datos y solo reciben la
-            información estrictamente necesaria para prestar su servicio dentro de CarolinaApp.
-            No compartimos tu información con ellos para fines distintos a los descritos en esta
-            tabla.
-        </div>
+        <div class="note">No compartimos tus datos con otros terceros salvo obligación legal.</div>
     </div>
 
-    <div class="card" id="seccion-4">
-        <h2>4. Datos que NO recopilamos</h2>
-        <p>Para tu tranquilidad, es igual de importante aclarar qué información CarolinaApp <strong>no</strong> recopila ni almacena:</p>
+    <div class="card">
+        <h2>5. Datos que NO recopilamos</h2>
         <ul>
-            <li><strong>No recopilamos</strong> números de tarjetas de crédito/débito ni datos financieros; todos los pagos son procesados directamente por Google Play Billing.</li>
-            <li><strong>No solicitamos</strong> tu documento de identidad, número de cédula ni datos académicos oficiales de ninguna universidad.</li>
-            <li><strong>No accedemos</strong> a tu ubicación geográfica precisa.</li>
-            <li><strong>No accedemos</strong> a tus contactos, mensajes, galería de fotos ni micrófono.</li>
-            <li><strong>No vendemos, alquilamos ni comercializamos</strong> tus datos personales a terceros bajo ninguna circunstancia.</li>
-            <li><strong>No compartimos</strong> tu información con anunciantes distintos a Google AdMob, ni con fines de marketing directo de terceros.</li>
+            <li>Números de tarjeta ni datos financieros (los gestiona Google Play).</li>
+            <li>Documento de identidad ni datos académicos oficiales.</li>
+            <li>Ubicación, contactos, mensajes, galería de fotos ni micrófono.</li>
+            <li>Información médica personal.</li>
         </ul>
     </div>
 
-    <div class="card" id="seccion-5">
-        <h2>5. Seguridad de los datos</h2>
-        <p>
-            Implementamos medidas técnicas y organizativas razonables para proteger tu información:
-        </p>
+    <div class="card">
+        <h2>6. Transferencias internacionales</h2>
+        <p>Tus datos pueden almacenarse y procesarse en servidores de Google ubicados fuera de tu país (por ejemplo, en Estados Unidos). Cuando aplica, Google utiliza mecanismos de transferencia reconocidos por la normativa de protección de datos.</p>
+    </div>
+
+    <div class="card">
+        <h2>7. Seguridad</h2>
         <ul>
-            <li>
-                Los datos almacenados localmente en tu dispositivo (como el banco de preguntas en
-                caché y tus preferencias) se guardan utilizando
-                <strong>cifrado AES-256</strong> mediante <em>EncryptedSharedPreferences</em> y un
-                <em>Android Keystore</em> gestionado por el propio sistema operativo Android.
-            </li>
-            <li>
-                Los datos remotos (tu progreso, estadísticas y estado de suscripción) se almacenan
-                en <strong>Firebase Firestore</strong>, protegidos por reglas de seguridad que
-                restringen el acceso exclusivamente a tu propia cuenta autenticada.
-            </li>
-            <li>
-                Toda la comunicación entre la App y nuestros servidores se realiza mediante
-                conexiones cifradas (HTTPS/TLS).
-            </li>
-            <li>
-                El acceso a los sistemas de administración de Firebase está restringido y
-                protegido con autenticación de la Desarrolladora.
-            </li>
+            <li>Los datos guardados en tu dispositivo se cifran con <em>EncryptedSharedPreferences</em> (AES-256) y Android Keystore.</li>
+            <li>Los datos remotos están en Firebase Firestore, protegidos por reglas de seguridad.</li>
+            <li>Toda la comunicación usa conexiones cifradas (HTTPS/TLS).</li>
         </ul>
+        <p>Ningún sistema es totalmente seguro; si detectamos una brecha que te afecte, te lo notificaremos conforme a la ley.</p>
+    </div>
+
+    <div class="card">
+        <h2>8. Conservación y eliminación</h2>
+        <p>Conservamos tus datos mientras tengas una cuenta activa. Si solicitas eliminar tu cuenta, borraremos tus datos personales en un plazo máximo de 30 días, salvo los que debamos conservar por obligaciones legales (por ejemplo, registros de compras).</p>
+    </div>
+
+    <div class="card">
+        <h2>9. Publicidad e identificadores</h2>
+        <p>Los usuarios gratuitos ven anuncios de Google AdMob, que puede usar el identificador de publicidad de tu dispositivo. Puedes restablecerlo o limitar la personalización de anuncios desde los ajustes de Google/Android de tu dispositivo.</p>
+    </div>
+
+    <div class="card">
+        <h2>10. Menores de edad</h2>
+        <p>CarolinaApp está dirigida a estudiantes y profesionales de medicina mayores de 18 años. No recopilamos intencionalmente datos de menores; si detectamos que lo hicimos, los eliminaremos.</p>
+    </div>
+
+    <div class="card">
+        <h2>11. Tus derechos</h2>
+        <p>Tienes derecho a acceder, conocer, actualizar, rectificar y eliminar tus datos, a solicitar su portabilidad, a oponerte a su tratamiento o limitarlo y a revocar tu consentimiento en cualquier momento. Para ejercerlos escribe a <a href="mailto:contacto.carolinaapp@gmail.com">contacto.carolinaapp@gmail.com</a>.</p>
+        <p>Si consideras que no atendimos tu solicitud, puedes acudir a la autoridad de protección de datos de tu país (por ejemplo, la Superintendencia de Industria y Comercio en Colombia, la ANPD en Brasil o la autoridad de control de tu país en la Unión Europea).</p>
+    </div>
+
+    <div class="card">
+        <h2>12. Cambios a esta política</h2>
+        <p>Podemos actualizar esta política. Si los cambios son importantes, actualizaremos la fecha de "Última actualización" y te avisaremos dentro de la App cuando sea razonablemente posible.</p>
+    </div>
+
+    <div class="contact-box">
+        <h2>13. Contacto</h2>
+        <p>📧 <a href="mailto:contacto.carolinaapp@gmail.com">contacto.carolinaapp@gmail.com</a></p>
+        <p><strong>CarolinaApp</strong><br>Desarrollado por Yareth Pinzón<br>Bogotá, Colombia</p>
+    </div>
+</div>
+
+<!-- ═══════════════════════ PORTUGUÊS ═══════════════════════ -->
+<div class="lang" id="lang-pt" lang="pt">
+
+    <div class="card">
         <p>
-            A pesar de estas medidas, ningún método de transmisión o almacenamiento electrónico es
-            100% infalible. Trabajamos de manera continua para proteger tu información, pero no
-            podemos garantizar su seguridad absoluta.
+            No <strong>CarolinaApp</strong> respeitamos sua privacidade. Esta política explica quais dados
+            coletamos, como os usamos, com quem os compartilhamos e quais direitos você tem ao usar nosso
+            aplicativo móvel (o "App"), desenvolvido por <strong>Yareth Pinzón</strong> ("nós"), com sede em
+            Bogotá, Colômbia. Ao usar o App, você aceita estas práticas.
         </p>
     </div>
 
-    <div class="card" id="seccion-6">
-        <h2>6. Derechos del usuario</h2>
+    <div class="card">
+        <h2>1. Responsável pelo tratamento</h2>
         <p>
-            De acuerdo con la Ley 1581 de 2012 y el Decreto 1377 de 2013 de Colombia (Régimen
-            General de Protección de Datos Personales), y en la medida en que resulten aplicables
-            el Reglamento General de Protección de Datos de la Unión Europea (GDPR) y otras leyes
-            de protección de datos, tienes derecho a:
+            A CarolinaApp (Bogotá, Colômbia) é responsável pelo tratamento dos seus dados pessoais.
+            Contato: <a href="mailto:contacto.carolinaapp@gmail.com">contacto.carolinaapp@gmail.com</a>.
+            Tratamos seus dados conforme a Lei 1581 de 2012 e o Decreto 1377 de 2013 (Colômbia) e, de acordo com o seu
+            país de residência, normas equivalentes como o GDPR (União Europeia), a LGPD (Brasil), a LFPDPPP (México),
+            a Lei 29733 (Peru) e outras leis locais de proteção de dados.
         </p>
+    </div>
+
+    <div class="card">
+        <h2>2. Dados que coletamos</h2>
         <ul>
-            <li><strong>Acceder</strong> a los datos personales que tenemos sobre ti.</li>
-            <li><strong>Conocer, actualizar y rectificar</strong> tu información personal.</li>
-            <li><strong>Solicitar la eliminación</strong> de tu cuenta y de los datos asociados a ella.</li>
-            <li><strong>Revocar la autorización</strong> otorgada para el tratamiento de tus datos, cuando no exista un deber legal o contractual que impida hacerlo.</li>
-            <li><strong>Presentar quejas</strong> ante la Superintendencia de Industria y Comercio (SIC) de Colombia por infracciones a la normativa de protección de datos.</li>
-            <li><strong>Retirar tu consentimiento</strong> de recepción de anuncios personalizados a través de la configuración de anuncios de tu dispositivo Android.</li>
+            <li><strong>Conta Google</strong> (Google Sign-In / Firebase Authentication): e-mail, nome, foto de perfil e um identificador único (UID).</li>
+            <li><strong>Nome de usuário</strong>: o que você escolher; fica visível para outros usuários no ranking semanal.</li>
+            <li><strong>Progresso de estudo</strong> (Firebase Firestore): simulados, respostas, notas, estatísticas por área, sequências, conquistas, anotações de estudo, questões salvas e cartões de revisão.</li>
+            <li><strong>Assinatura</strong>: estado Free/Premium, identificador da assinatura e data de expiração (Google Play Billing). O pagamento é processado pelo Google Play; não vemos seu cartão nem seus dados bancários.</li>
+            <li><strong>Preferências</strong>: idioma, provas-alvo e lembretes.</li>
+            <li><strong>Dados técnicos e de uso</strong> (Firebase Analytics e Crashlytics): modelo do dispositivo, versão do Android, registros de erros e eventos de uso.</li>
+            <li><strong>Identificador de publicidade</strong> (usuários gratuitos, via AdMob).</li>
         </ul>
+    </div>
+
+    <div class="card">
+        <h2>3. Para que usamos seus dados</h2>
+        <ul>
+            <li>Criar e manter sua conta e sincronizar seu progresso (execução do serviço).</li>
+            <li>Calcular estatísticas, plano de estudo, ranking semanal e ligas.</li>
+            <li>Gerenciar e validar sua assinatura Premium.</li>
+            <li>Exibir anúncios para usuários gratuitos (usuários Premium não veem anúncios).</li>
+            <li>Detectar e corrigir erros e melhorar o App com estatísticas de uso (legítimo interesse).</li>
+            <li>Enviar lembretes de estudo, se você os ativar (consentimento).</li>
+            <li>Atender suas solicitações de suporte.</li>
+        </ul>
+        <p><strong>Não vendemos seus dados pessoais</strong> nem os usamos para fins diferentes dos descritos.</p>
+    </div>
+
+    <div class="card">
+        <h2>4. Serviços de terceiros</h2>
+        <table>
+            <thead><tr><th>Serviço</th><th>Finalidade</th><th>Política do provedor</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><strong>Google Firebase</strong><br>(Authentication, Firestore, Crashlytics, Analytics)</td>
+                    <td>Autenticação, armazenamento do progresso, relatório de erros e estatísticas de uso.</td>
+                    <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">firebase.google.com/support/privacy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Google AdMob</strong></td>
+                    <td>Anúncios para usuários gratuitos.</td>
+                    <td><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">support.google.com/admob</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Google Play (Billing)</strong></td>
+                    <td>Pagamentos e gerenciamento da assinatura Premium.</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="note">Não compartilhamos seus dados com outros terceiros, salvo obrigação legal.</div>
+    </div>
+
+    <div class="card">
+        <h2>5. Dados que NÃO coletamos</h2>
+        <ul>
+            <li>Números de cartão nem dados financeiros (geridos pelo Google Play).</li>
+            <li>Documento de identidade nem dados acadêmicos oficiais.</li>
+            <li>Localização, contatos, mensagens, galeria de fotos nem microfone.</li>
+            <li>Informações médicas pessoais.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>6. Transferências internacionais</h2>
+        <p>Seus dados podem ser armazenados e processados em servidores do Google localizados fora do seu país (por exemplo, nos Estados Unidos). Quando aplicável, o Google usa mecanismos de transferência reconhecidos pela legislação de proteção de dados.</p>
+    </div>
+
+    <div class="card">
+        <h2>7. Segurança</h2>
+        <ul>
+            <li>Os dados armazenados no seu dispositivo são criptografados com <em>EncryptedSharedPreferences</em> (AES-256) e Android Keystore.</li>
+            <li>Os dados remotos ficam no Firebase Firestore, protegidos por regras de segurança.</li>
+            <li>Toda a comunicação usa conexões criptografadas (HTTPS/TLS).</li>
+        </ul>
+        <p>Nenhum sistema é totalmente seguro; se detectarmos uma violação que afete você, avisaremos conforme a lei.</p>
+    </div>
+
+    <div class="card">
+        <h2>8. Retenção e exclusão</h2>
+        <p>Mantemos seus dados enquanto você tiver uma conta ativa. Se solicitar a exclusão da conta, apagaremos seus dados pessoais em até 30 dias, exceto os que devamos conservar por obrigações legais (por exemplo, registros de compras).</p>
+    </div>
+
+    <div class="card">
+        <h2>9. Publicidade e identificadores</h2>
+        <p>Usuários gratuitos veem anúncios do Google AdMob, que pode usar o identificador de publicidade do seu dispositivo. Você pode redefini-lo ou limitar a personalização de anúncios nas configurações do Google/Android do seu dispositivo.</p>
+    </div>
+
+    <div class="card">
+        <h2>10. Menores de idade</h2>
+        <p>O CarolinaApp é destinado a estudantes e profissionais de medicina maiores de 18 anos. Não coletamos intencionalmente dados de menores; se detectarmos que isso ocorreu, os excluiremos.</p>
+    </div>
+
+    <div class="card">
+        <h2>11. Seus direitos</h2>
+        <p>Você tem direito de acessar, conhecer, atualizar, corrigir e excluir seus dados, solicitar a portabilidade, opor-se ao tratamento ou limitá-lo e revogar seu consentimento a qualquer momento. Para exercê-los, escreva para <a href="mailto:contacto.carolinaapp@gmail.com">contacto.carolinaapp@gmail.com</a>.</p>
+        <p>Se achar que não atendemos sua solicitação, você pode recorrer à autoridade de proteção de dados do seu país (por exemplo, a ANPD no Brasil, a Superintendência de Indústria e Comércio na Colômbia ou a autoridade de controle do seu país na União Europeia).</p>
+    </div>
+
+    <div class="card">
+        <h2>12. Alterações desta política</h2>
+        <p>Podemos atualizar esta política. Se as mudanças forem importantes, atualizaremos a data de "Última atualização" e avisaremos dentro do App quando for razoavelmente possível.</p>
+    </div>
+
+    <div class="contact-box">
+        <h2>13. Contato</h2>
+        <p>📧 <a href="mailto:contacto.carolinaapp@gmail.com">contacto.carolinaapp@gmail.com</a></p>
+        <p><strong>CarolinaApp</strong><br>Desenvolvido por Yareth Pinzón<br>Bogotá, Colômbia</p>
+    </div>
+</div>
+
+<!-- ═══════════════════════ ENGLISH ═══════════════════════ -->
+<div class="lang" id="lang-en" lang="en">
+
+    <div class="card">
         <p>
-            Para ejercer cualquiera de estos derechos, incluyendo la eliminación completa de tu
-            cuenta y datos, escríbenos a
-            <a href="mailto:contacto.carolinaapp@gmail.com">contacto.carolinaapp@gmail.com</a>.
-            Atenderemos tu solicitud en un plazo razonable y, en todo caso, dentro de los términos
-            establecidos por la ley aplicable.
+            At <strong>CarolinaApp</strong> we respect your privacy. This policy explains what data we
+            collect, how we use it, who we share it with and what rights you have when you use our mobile
+            application (the "App"), developed by <strong>Yareth Pinzón</strong> ("we"), based in
+            Bogotá, Colombia. By using the App you accept these practices.
         </p>
     </div>
 
-    <div class="card" id="seccion-7">
-        <h2>7. Cambios a esta política</h2>
+    <div class="card">
+        <h2>1. Data controller</h2>
         <p>
-            Podemos actualizar esta Política de Privacidad ocasionalmente para reflejar cambios en
-            nuestras prácticas, en la App o por motivos legales u operativos. Cuando realicemos
-            cambios significativos, actualizaremos la fecha de "Última actualización" en la parte
-            superior de este documento y, cuando sea razonablemente posible, te lo notificaremos
-            dentro de la propia App.
-        </p>
-        <p>
-            Te recomendamos revisar esta página periódicamente. El uso continuado de CarolinaApp
-            después de la publicación de cambios constituye tu aceptación de la política
-            actualizada.
+            CarolinaApp (Bogotá, Colombia) is responsible for processing your personal data.
+            Contact: <a href="mailto:contacto.carolinaapp@gmail.com">contacto.carolinaapp@gmail.com</a>.
+            We process your data in accordance with Law 1581 of 2012 and Decree 1377 of 2013 (Colombia) and, depending on
+            your country of residence, equivalent rules such as the GDPR (European Union), the LGPD (Brazil), the LFPDPPP
+            (Mexico), Law 29733 (Peru) and other local data protection laws.
         </p>
     </div>
 
-    <div class="contact-box" id="seccion-8">
-        <h2>8. Contacto</h2>
-        <p>
-            Si tienes preguntas, comentarios o solicitudes relacionadas con esta Política de
-            Privacidad o con el tratamiento de tus datos personales, puedes contactarnos en:
-        </p>
-        <p>
-            📧 <a href="mailto:contacto.carolinaapp@gmail.com">contacto.carolinaapp@gmail.com</a>
-        </p>
-        <p style="margin-top: 16px;">
-            <strong>CarolinaApp</strong><br>
-            Desarrollado por Yareth Pinzón<br>
-            Colombia
-        </p>
+    <div class="card">
+        <h2>2. Data we collect</h2>
+        <ul>
+            <li><strong>Google account</strong> (Google Sign-In / Firebase Authentication): email address, name, profile photo and a unique identifier (UID).</li>
+            <li><strong>Username</strong>: the one you choose; it is visible to other users in the weekly ranking.</li>
+            <li><strong>Study progress</strong> (Firebase Firestore): simulations, answers, scores, statistics by area, streaks, achievements, study notes, saved questions and review cards.</li>
+            <li><strong>Subscription</strong>: Free/Premium status, subscription identifier and expiry date (Google Play Billing). Payment is processed by Google Play; we never see your card or bank details.</li>
+            <li><strong>Preferences</strong>: language, target exams and reminders.</li>
+            <li><strong>Technical and usage data</strong> (Firebase Analytics and Crashlytics): device model, Android version, error logs and usage events.</li>
+            <li><strong>Advertising identifier</strong> (free users, through AdMob).</li>
+        </ul>
     </div>
+
+    <div class="card">
+        <h2>3. How we use your data</h2>
+        <ul>
+            <li>To create and maintain your account and sync your progress (performing the service).</li>
+            <li>To calculate statistics, your study plan, the weekly ranking and leagues.</li>
+            <li>To manage and validate your Premium subscription.</li>
+            <li>To show ads to free users (Premium users do not see ads).</li>
+            <li>To detect and fix errors and improve the App with usage statistics (legitimate interest).</li>
+            <li>To send study reminders if you turn them on (consent).</li>
+            <li>To answer your support requests.</li>
+        </ul>
+        <p><strong>We do not sell your personal data</strong> and we do not use it for purposes other than those described.</p>
+    </div>
+
+    <div class="card">
+        <h2>4. Third-party services</h2>
+        <table>
+            <thead><tr><th>Service</th><th>Purpose</th><th>Provider policy</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><strong>Google Firebase</strong><br>(Authentication, Firestore, Crashlytics, Analytics)</td>
+                    <td>Authentication, storing study progress, error reporting and usage statistics.</td>
+                    <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">firebase.google.com/support/privacy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Google AdMob</strong></td>
+                    <td>Ads for free users.</td>
+                    <td><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">support.google.com/admob</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Google Play (Billing)</strong></td>
+                    <td>Payments and management of the Premium subscription.</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="note">We do not share your data with other third parties except where required by law.</div>
+    </div>
+
+    <div class="card">
+        <h2>5. Data we do NOT collect</h2>
+        <ul>
+            <li>Card numbers or financial data (handled by Google Play).</li>
+            <li>Government ID or official academic records.</li>
+            <li>Location, contacts, messages, photo gallery or microphone.</li>
+            <li>Personal medical information.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>6. International transfers</h2>
+        <p>Your data may be stored and processed on Google servers located outside your country (for example, in the United States). Where applicable, Google uses transfer mechanisms recognized by data protection law.</p>
+    </div>
+
+    <div class="card">
+        <h2>7. Security</h2>
+        <ul>
+            <li>Data stored on your device is encrypted with <em>EncryptedSharedPreferences</em> (AES-256) and Android Keystore.</li>
+            <li>Remote data is kept in Firebase Firestore, protected by security rules.</li>
+            <li>All communication uses encrypted connections (HTTPS/TLS).</li>
+        </ul>
+        <p>No system is completely secure; if we detect a breach that affects you, we will notify you as required by law.</p>
+    </div>
+
+    <div class="card">
+        <h2>8. Retention and deletion</h2>
+        <p>We keep your data while you have an active account. If you ask us to delete your account, we will erase your personal data within 30 days, except what we must keep to meet legal obligations (for example, purchase records).</p>
+    </div>
+
+    <div class="card">
+        <h2>9. Advertising and identifiers</h2>
+        <p>Free users see Google AdMob ads, which may use your device advertising identifier. You can reset it or limit ad personalization in your device Google/Android settings.</p>
+    </div>
+
+    <div class="card">
+        <h2>10. Minors</h2>
+        <p>CarolinaApp is intended for medical students and professionals aged 18 or older. We do not knowingly collect data from minors; if we find that we did, we will delete it.</p>
+    </div>
+
+    <div class="card">
+        <h2>11. Your rights</h2>
+        <p>You have the right to access, know, update, correct and delete your data, to request portability, to object to or restrict processing, and to withdraw your consent at any time. To exercise them, write to <a href="mailto:contacto.carolinaapp@gmail.com">contacto.carolinaapp@gmail.com</a>.</p>
+        <p>If you believe we did not handle your request properly, you can contact the data protection authority in your country (for example, the Superintendence of Industry and Commerce in Colombia, the ANPD in Brazil, or your supervisory authority in the European Union).</p>
+    </div>
+
+    <div class="card">
+        <h2>12. Changes to this policy</h2>
+        <p>We may update this policy. If the changes are important, we will update the "Last updated" date and let you know inside the App where reasonably possible.</p>
+    </div>
+
+    <div class="contact-box">
+        <h2>13. Contact</h2>
+        <p>📧 <a href="mailto:contacto.carolinaapp@gmail.com">contacto.carolinaapp@gmail.com</a></p>
+        <p><strong>CarolinaApp</strong><br>Developed by Yareth Pinzón<br>Bogotá, Colombia</p>
+    </div>
+</div>
 
     <footer>
-        <p>© 2026 CarolinaApp. Todos los derechos reservados.</p>
-        <p>Última actualización: Septiembre de 2026</p>
+        <p>© 2026 CarolinaApp</p>
     </footer>
 
 </div>
+
+<script>
+(function () {
+    var T = {
+        es: ["Política de Privacidad", "CarolinaApp · Última actualización: Octubre de 2026"],
+        pt: ["Política de Privacidade", "CarolinaApp · Última atualização: Outubro de 2026"],
+        en: ["Privacy Policy", "CarolinaApp · Last updated: October 2026"]
+    };
+    function show(l) {
+        if (!T[l]) l = "es";
+        document.documentElement.lang = l;
+        document.title = T[l][0] + " — CarolinaApp";
+        document.getElementById("hero-title").textContent = T[l][0];
+        document.getElementById("hero-sub").textContent = T[l][1];
+        ["es", "pt", "en"].forEach(function (c) {
+            document.getElementById("lang-" + c).classList.toggle("active", c === l);
+        });
+        document.querySelectorAll(".lang-switch button").forEach(function (b) {
+            b.classList.toggle("active", b.getAttribute("data-lang") === l);
+        });
+    }
+    document.querySelectorAll(".lang-switch button").forEach(function (b) {
+        b.addEventListener("click", function () { show(b.getAttribute("data-lang")); });
+    });
+    var q = (location.search.match(/[?&]lang=(es|pt|en)/) || [])[1];
+    var nav = (navigator.language || "es").slice(0, 2);
+    show(q || nav);
+})();
+</script>
 
 </body>
 </html>
